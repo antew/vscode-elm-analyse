@@ -22,7 +22,7 @@ export function activate(context: ExtensionContext) {
   let serverOptions: ServerOptions = {
     run: { module: serverModule, transport: TransportKind.stdio, args: ["--lsp", "--stdio"] },
     debug: {
-      args: ["--lsp", "--node-ipc"],
+      args: ["--lsp", "--stdio"],
       module: serverModule,
       transport: TransportKind.stdio,
       options: debugOptions
